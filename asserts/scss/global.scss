@@ -1,0 +1,326 @@
+// example from RUSVINIL
+
+@import 'asserts/scss/helpers/helpers';
+@import 'asserts/scss/colors';
+@import 'asserts/scss/global-containers';
+@import 'asserts/scss/global-containers-introJs';
+
+html {
+  font-family: 'SFPROText', sans-serif;
+  font-size: 14px;
+  color: $color-black;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  display: block;
+  color: $color-light-blue;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+
+  &:hover {
+    color: $color-blue;
+    cursor: pointer;
+  }
+}
+
+button, input, select {
+  font-family: inherit;
+}
+
+.display-none {
+  display: none;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.text-header-logo {
+  @include header-logo;
+}
+
+.text-title {
+  @include text-title;
+}
+
+.text-subtitle {
+  @include text-subtitle;
+}
+
+.text-error {
+  @include text-error;
+}
+
+.text-button {
+  @include text-button;
+}
+
+.text-breadcrumbs {
+  @include text-breadcrumbs;
+}
+
+.text-separator {
+  @include text-separator;
+}
+
+.text-input {
+  @include text-input;
+}
+
+.text-input-label {
+  @include text-input-label;
+}
+
+.text-cards {
+  @include text-cards;
+}
+
+.text-cards-subheader {
+  @include text-cards-subheader;
+}
+
+.text-cards-description-gray {
+  @include text-cards-description-gray;
+}
+
+.text-email {
+  @include text-email;
+}
+
+.pagination__wrapper_top {
+  .pagination {
+    &__bullet {
+      display: flex;
+      width: 10px;
+      height: 10px;
+      margin-left: 8px;
+      margin-right: 8px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.6);
+      opacity: 1;
+    }
+  }
+}
+
+.pagination {
+  &__wrapper {
+    display: none;
+    margin-left: -8px;
+    margin-right: -8px;
+    height: 16px;
+    @media screen and (max-width: 767px) {
+      display: flex;
+      align-items: center;
+      width: fit-content !important;
+    }
+  }
+
+  &__bullet {
+    display: flex;
+    width: 10px;
+    height: 10px;
+    min-width: 10px;
+    min-height: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    opacity: .1;
+    transition: all .3s ease;
+
+    &.swiper-pagination-bullet-active {
+      width: 14px;
+      height: 14px;
+      min-width: 14px;
+      min-height: 14px;
+      background-color: #9ADB66;
+      border: 1px solid #9ADB66;
+      opacity: 1;
+      box-shadow: 0px 2px 20px rgba(154, 219, 102, 0.6);
+    }
+  }
+}
+
+#progress {
+  position: absolute;
+  bottom: 0;
+  top: calc(100% - 4px);
+  background-color: #E7E7E7;
+
+  .swiper-pagination-progressbar-fill {
+    height: 4px;
+    border-radius: 2px;
+    background-color: #9ADB66;
+    z-index: 10;
+  }
+}
+
+
+//===========IntroJs============//
+//обозреваемый тег
+.introjs-helperLayer {
+  box-shadow: rgb(33 33 33 / 80%) 0px 0px 1px 1px, rgb(33 33 33 / 50%) 0px 0px 0px 5000px !important;
+}
+
+
+.introjs-relativePosition {
+  position: initial !important;
+}
+
+.specialization_step-1 {
+  @include specialization_step-1
+}
+
+.introjs-tooltipReferenceLayer {
+
+
+  .tooltip_step_3 {
+    @include tooltip_step_3
+  }
+
+  .tooltip_step_4 {
+    @include tooltip_step_4
+  }
+
+  .tooltip_step_5_isAuth {
+    @include tooltip_step_5_isAuth
+  }
+
+  .tooltip_step_5 {
+    @include tooltip_step_5
+  }
+
+  .tooltip_specializations_step_1 {
+    @include tooltip_specialization_step_1
+  }
+
+  .tooltip_specializations_step_6 {
+    @include tooltip_specializations_step_6
+  }
+
+  .tooltip_specializations_step_7 {
+    @include tooltip_specializations_step_7
+  }
+
+  .tooltip_specialization_step_1 {
+    @include tooltip_specialization_step_1
+  }
+
+
+  //выпадающее меню
+  .introjs-tooltip {
+
+
+    //иконка закрытия
+    .introjs-tooltip-header {
+      display: none;
+
+      .introjs-skipbutton {
+        text-align: end;
+      }
+    }
+
+    //текст
+    .introjs-tooltiptext {
+      font-family: SFPROText !important;
+      line-height: 20px;
+      font-size: 15px;
+    }
+
+    //счетчик прогресса
+    .introjs-helperNumberLayer {
+      font-size: 10px;
+    }
+
+    // блок кнопок
+    .introjs-tooltipbuttons {
+      flex-direction: row;
+      display: inherit;
+      border-top: none;
+      height: 50px;
+
+      // кнопка
+      .introjs-button {
+        width: 60px;
+        background-color: $color-light-green;
+        border-radius: $border-radius-xs;
+        border: none !important;
+        color: $color-black;
+        font-size: 14px;
+        font-weight: 500;
+        text-shadow: none;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s ease;
+        box-shadow: none;
+        font-family: SFPROText !important;
+
+        &:hover {
+          background-color: $color-semi-green;
+          border: none;
+        }
+      }
+
+      .introjs-prevbutton {
+        display: none;
+      }
+    }
+  }
+}
+
+//===========IntroJs============//
+
+//===========CustomSelect============//
+.ant-select-selector {
+  border-radius: 6px !important;
+  background-color: #fafafc !important;
+  width: 100%;
+  height: 40px !important;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+  color: $color-black;
+  padding: 10px 12px 10px 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-color: #e5e5e5 !important;
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  background-color: #c9cbcf !important;
+  outline: none;
+}
+//===========CustomSelect============//

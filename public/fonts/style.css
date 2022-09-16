@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'SFPRODisplay-Bold';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url('SFPRODisplay-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SFPROText';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url('SFPROText-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SFPROText';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('SFPROText-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SFPROText';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('SFPROText-Regular.woff') format('woff');
+}
