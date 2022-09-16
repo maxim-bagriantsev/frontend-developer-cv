@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  width: 100vw;
+  background-color: green;
+  position: absolute;
+  top: 0;
+  height: 60px;
+
+  &__wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: calc(100% - 40px);
+    max-width: 1170px;
+    background-color: red;
+
+    .changeLanguage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .button {
+        margin-right: 10px;
+      }
+    }
+  }
+
+
+}

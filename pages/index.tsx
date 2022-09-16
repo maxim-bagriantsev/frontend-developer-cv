@@ -1,16 +1,29 @@
+// ** React Imports
 import React from 'react';
+
+// ** Styles
 import classNames from 'classnames/bind';
 import styles from './index.module.scss';
 
+// ** Sky
+import ModuleSky from '@components/sky/ModuleSky';
+import Hero from '@components/Hero/Hero';
+import Header from '@components/Header/Header';
+
+
 const cx = classNames.bind(styles);
+
 
 const MainPage = () => {
 
   return (
     <main className={cx('main')}>
-      <section className={cx('hero')}>
-        Hero
+      <Header />
+      <ModuleSky />
+      <section>
+        <Hero />
       </section>
+
       <section className={cx('description')}>
         description
       </section>
@@ -35,6 +48,8 @@ const MainPage = () => {
       <footer>
         footer
       </footer>
+
+
     </main>
   );
 };

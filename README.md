@@ -1,4 +1,4 @@
-# Skillmaps Frontend Application
+# Frontend Application - CV Bagryancev Maxim
 
 TODO: description
 

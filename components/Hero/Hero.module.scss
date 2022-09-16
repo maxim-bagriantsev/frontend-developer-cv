@@ -1,0 +1,43 @@
+.hero {
+  width: calc(100% - 40px);
+  max-width: 1170px;
+  padding: 40px 20px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+
+  &__wrapperImage {
+    width: max-content;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 3px rgb(139 246 157 / 60%);
+
+    &_image img {
+      border-radius: 50%;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+
+    }
+
+    .subTitle {
+
+
+      &__directions {
+
+      }
+
+      &__stack {
+
+      }
+    }
+  }
+
+  &__contacts {
+
+  }
+}
