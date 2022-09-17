@@ -10,7 +10,7 @@ import ModuleSky from '@components/sky/ModuleSky';
 import Hero from '@components/Hero/Hero';
 import Header from '@components/Header/Header';
 
-
+import backgroundImage from '../public/images/main-background2.jpg'
 const cx = classNames.bind(styles);
 
 
@@ -18,8 +18,10 @@ const MainPage = () => {
 
   return (
     <main className={cx('main')}>
-        <Header />
+        <div className={cx('background')}/>
         <ModuleSky />
+        <Header />
+
         <section>
           <Hero />
         </section>

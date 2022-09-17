@@ -1,7 +1,6 @@
 .hero {
-  width: calc(100% - 40px);
+  width: 100%;
   max-width: 1170px;
-  padding: 40px 20px;
   border: 1px solid red;
   display: flex;
   justify-content: space-around;
@@ -14,27 +13,41 @@
     &_image img {
       border-radius: 50%;
     }
+
+    & div {
+      border-radius: 50%;
+
+      &:hover {
+        border-radius: 50%;
+      }
+    }
   }
 
   &__description {
     display: flex;
     flex-direction: column;
 
+
     .title {
-      font-size: 40px;
-      margin-bottom: 0;
+      font-size: 38px;
+      line-height: 44px;
+      margin-bottom: 20px;
+      font-weight: 700;
     }
 
     .subTitle {
-      font-size: 26px;
-      margin-bottom: 0;
+
+      margin-bottom: 20px;
+      font-weight: 500;
 
       &__directions {
-
+        margin-bottom: 10px;
+        font-size: 22px;
       }
 
       &__stack {
-
+        font-size: 22px;
+        opacity: .6;
       }
     }
   }
