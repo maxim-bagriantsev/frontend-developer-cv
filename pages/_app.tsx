@@ -6,7 +6,7 @@ import '../asserts/scss/global.scss';
 
 // ** Imports i18n
 import { I18nextProvider } from 'react-i18next';
-import i18n from '../lib/helpers/i18n'
+import i18n from '../lib/helpers/i18n';
 
 
 function MyApp({ Component, pageProps }: any) {

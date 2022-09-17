@@ -1,78 +1,135 @@
-// example from RUSVINIL
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@600&display=swap');
 
-@import 'asserts/scss/helpers/helpers';
-@import 'asserts/scss/colors';
 
-
-html {
-  font-family: 'SFPROText', sans-serif;
-  font-size: 14px;
-  color: $color-black;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+.not-scrollable {
+  overflow: hidden;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.background {
+  background-size: 100%;
+
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
+html,
+body {
   margin: 0;
-  overflow-x: hidden;
-}
+  padding: 0;
 
-a {
-  display: block;
-  color: $color-light-blue;
-  font-size: 14px;
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-
-  &:hover {
-    color: $color-blue;
-    cursor: pointer;
+  > div {
+    width: 100vw;
+    min-height: 100vh;
   }
 }
 
-button, input, select {
-  font-family: inherit;
+
+a {
+  display: inline-block;
 }
 
-.display-none {
-  display: none;
+p {
+  white-space: pre-wrap;
 }
 
-.opacity-0 {
-  opacity: 0;
+h1,
+h2,
+h3,
+span,
+div {
+  margin: 0;
 }
 
-.wrapper {
-  width: 100%;
+*,
+code {
+  font-family: 'Ubuntu', sans-serif;
 }
 
-
-.ant-image-mask {
-  border-radius: 50%;
+h1,
+h2,
+h3 {
+  font-weight: 600;
 }
 
+a,
+button,
+input,
+textarea,
+div {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
 
+img {
+  vertical-align: top;
+  display: block;
+}
 
+p,
+span,
+section,
+aside,
+header,
+footer,
+main {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  cursor: default;
+}
 
+h1 {
+  font-size: 25px;
+  line-height: 30px;
+}
 
+h2 {
+  font-size: 25px;
+  line-height: 30px;
+}
 
+h3 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+//@media screen and (min-width: $tablet) {
+//  h1 {
+//    font-size: 48px;
+//    line-height: 57px;
+//  }
+//  h2 {
+//    font-size: 36px;
+//    line-height: 44px;
+//  }
+//  h3 {
+//    font-size: 20px;
+//    line-height: 24px;
+//  }
+//
+//  a,
+//  button,
+//  input,
+//  textarea,
+//  div {
+//    font-size: 18px;
+//    line-height: 22px;
+//  }
+//
+//  p,
+//  span,
+//  section,
+//  aside,
+//  header,
+//  footer,
+//  main {
+//    font-size: 18px;
+//    line-height: 22px;
+//    white-space: pre-wrap;
+//  }
+//}
+
+* {
+  margin: 0;
+}
