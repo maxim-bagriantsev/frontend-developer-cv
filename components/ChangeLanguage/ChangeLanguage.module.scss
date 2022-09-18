@@ -1,0 +1,33 @@
+@import "asserts/scss/colors";
+
+.changeLanguage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+
+  .button {
+    cursor: pointer;
+    color: $color-black;
+    background: none;
+    margin-right: 10px;
+    border: 1px solid $green;
+
+    &:hover {
+      box-shadow: $color-button-shadow--yellow;
+    }
+
+    &__active {
+      background-color: $color-button-green;
+      box-shadow: $color-button-shadow-green;
+
+      & p {
+        font-weight: 600;
+      }
+    }
+
+    & p {
+      cursor: pointer;
+    }
+  }
+}

@@ -5,24 +5,24 @@
   position: absolute;
   top: 0;
   height: 60px;
+  border: 1px solid green;
 
   &__wrapper {
     display: flex;
     margin: 0 auto;
     width: calc(100% - 40px);
     max-width: 1170px;
+    align-items: center;
     justify-content: flex-end;
 
-    .changeLanguage {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .icon {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
 
-      .button {
-        margin-right: 10px;
+      &:hover{
+        $color-button-shadow--yellow: 0px 0px 8px 0px rgba(20, 225, 53, 0.4);
       }
     }
   }
-
-
 }

@@ -4,9 +4,9 @@ import styles from './Hero.module.scss';
 import 'antd/dist/antd.css';
 import {Image} from 'antd';
 import {useTranslation} from 'react-i18next';
-import Icon from "@UI/Icon/Icon";
-import {SocialLink} from "@components/SocialLink/SocialLink";
-
+import telegram from '../../public/icons/social_icons/telegram.png'
+import email from '../../public/icons/social_icons/email.png'
+import {socialItems} from "@components/Hero/constants";
 const cx = classNames.bind(styles);
 
 
@@ -29,19 +29,11 @@ const Hero = () => {
                     <h3 className={cx('subTitle__stack')}>{t('stack')}</h3>
                 </div>
 
-
                 <div className={cx('contacts')}>
-                    <SocialLink />
-                    {/*<div className={cx('contacts__item')}>*/}
-                    {/*    <div className={cx('icon')}><Icon symbol={'telegram'}/></div>*/}
-                    {/*    Telegram*/}
-                    {/*</div>*/}
-                    <div>
-                        Telegram
-                    </div>
-                    <div>
-                        Telegram
-                    </div>
+                    {socialItems.map(item => (<div className={cx('contacts__item')}>
+                        <img className={cx('contacts__icon')} src={item.icon.src} alt="telegram"/>
+                        <a type='m' target={'_blank'} href={item.link} className={cx('contacts__item_link')}>{item.label}</a>
+                    </div>) )}
                 </div>
             </div>
 

@@ -1,7 +1,8 @@
+@import '../asserts/scss/colors';
+
 .hero {
   width: 100%;
   max-width: 1170px;
-  border: 1px solid red;
   display: flex;
   justify-content: space-around;
 
@@ -52,7 +53,53 @@
     }
   }
 
-  &__contacts {
+  .contacts {
+    display: flex;
+    flex-direction: column;
 
+    cursor: pointer;
+
+    &__icon {
+      width: 26px;
+    }
+
+    &__item {
+      display: flex;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 10px;
+
+      &_link {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 500;
+        margin-left: 15px;
+        display: inline-block;
+        color: $color-black;
+
+        &::after {
+          content: '';
+          width: 0;
+          height: 1px;
+          display: block;
+          background: $color-black;
+          transition: 300ms;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+
+        &:hover {
+          text-decoration: none;
+          transition: all .5s ease;
+        }
+      }
+
+      &:hover {
+        opacity: .7;
+        transition: all .5s ease;
+      }
+    }
   }
 }

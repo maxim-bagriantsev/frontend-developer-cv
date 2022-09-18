@@ -1,42 +1,47 @@
 // ** React Imports
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 
 // ** Imports i18n
-import { useTranslation } from 'react-i18next';
+import {useTranslation} from 'react-i18next';
 
 // ** Styles
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 
 // ** Antd
-import { Button } from 'antd';
+import {ChangeLanguage} from "@components/ChangeLanguage/ChangeLanguage";
 
+// ** Icons
+import GitHubIcon from '../../public/icons/social_icons/github.png'
 const cx = classNames.bind(styles);
 
 
 const Header = () => {
-  const [isActive, setIsActive] = useState();
+    const [isActiveEn, setIsActiveEn] = useState(true);
+    const [isActiveRu, setIsActiveRu] = useState(false);
 
-  const { t, i18n } = useTranslation();
+    const {t, i18n} = useTranslation();
 
-  const changeLanguage = (language: string) => {
-    i18n.changeLanguage(language);
-  };
-  return (
-    <header className={cx('header')}>
-      <div className={cx('header__wrapper')}>
-        <div className={cx('changeLanguage')}>
-          <Button type='primary' onClick={() => changeLanguage('en')} className={cx('button')}>
-            EN
-          </Button>
-          <Button type='primary' onClick={() => changeLanguage('ru')}>
-            RU
-          </Button>
-        </div>
-      </div>
+    const changeLanguage = (language: string) => {
+        if (language === 'ru') {
+            setIsActiveRu(true)
+            setIsActiveEn(false)
+        }
+        if (language === 'en') {
+            setIsActiveEn(true)
+            setIsActiveRu(false)
+        }
+        i18n.changeLanguage(language);
+    };
+    return (
+        <header className={cx('header')}>
+            <div className={cx('header__wrapper')}>
+                <ChangeLanguage changeLanguage={changeLanguage} isActiveEn={isActiveEn} isActiveRu={isActiveRu}/>
+                <img src={GitHubIcon.src} alt="github" className={cx('icon')}/>
+            </div>
 
-    </header>
-  );
+        </header>
+    );
 };
 
 export default Header;
