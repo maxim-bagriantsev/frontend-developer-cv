@@ -1,0 +1,11 @@
+@import '../asserts/scss/colors';
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: 22px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+}

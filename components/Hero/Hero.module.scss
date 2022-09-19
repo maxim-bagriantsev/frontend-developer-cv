@@ -56,7 +56,6 @@
   .contacts {
     display: flex;
     flex-direction: column;
-
     cursor: pointer;
 
     &__icon {
@@ -68,6 +67,8 @@
       font-size: 14px;
       line-height: 20px;
       margin-bottom: 10px;
+
+
 
       &_link {
         font-size: 18px;
@@ -97,8 +98,10 @@
       }
 
       &:hover {
+
         opacity: .7;
         transition: all .5s ease;
+
       }
     }
   }
