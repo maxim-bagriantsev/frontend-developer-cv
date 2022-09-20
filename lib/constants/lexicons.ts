@@ -8,7 +8,7 @@ export const translations = {
       'sendEmail': 'Send E-mail',
       'contactByPhone': 'Contact by Phone',
       'location': 'Russia, Samara region',
-      'description1': 'Hardworking and passionate frontend developer. Pedantry, determination and commitment in every project are my main strengths. I am looking forward to become a part of your team.',
+      'description1': 'Hardworking and passionate full-stack developer. Pedantry, determination and commitment in every project are my main strengths.',
       'description2': 'I took a part in private as well as commercial projects.',
       'description3': ' I am looking forward to become a part of your team 😉'
     }
