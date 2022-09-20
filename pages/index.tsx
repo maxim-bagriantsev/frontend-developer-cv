@@ -23,7 +23,7 @@ const MainPage = () => {
     return (
         <main className={cx('main')}>
             <div className={cx('background')}/>
-            {/*<ModuleSky />*/}
+            <ModuleSky />
             <Header/>
 
             <section>

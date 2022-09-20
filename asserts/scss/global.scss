@@ -15,11 +15,11 @@ html,
 body {
   margin: 0;
   padding: 0;
-  position: relative;
   overflow: hidden;
 
   > div {
     width: 100vw;
+    //min-height: 100vh;
   }
 }
 
@@ -132,4 +132,26 @@ h3 {
 
 * {
   margin: 0;
+}
+
+.ant-modal-header {
+  border-bottom: none!important;
+  border-top-left-radius: 16px !important;
+  border-top-right-radius: 16px !important;
+}
+
+.ant-modal-footer {
+  border-top: none!important;
+
+  .ant-btn {
+    display: none!important;
+  }
+}
+
+
+.ant-modal-content {
+  border-radius: 16px !important;
+}
+.ant-modal-body{
+  border: none!important;
 }

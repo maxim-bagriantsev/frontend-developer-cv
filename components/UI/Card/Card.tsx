@@ -4,26 +4,32 @@ import styles from './Card.module.scss';
 
 const cx = classNames.bind(styles);
 type Card = {
-  link?: string
-  image?: string | undefined
-  label?: string
-  title?: string
+    link?: string
+    image?: string | undefined
+    label?: string
+    title?: string
+    onClick?: () => void
 }
 
 const Card = (props: Card) => {
 
-  const { link, image, label, title } = props;
+    const {link, image, label, title, onClick} = props;
 
-  return (
-    <a className={cx('card')} href={link} target={'_blank'} rel="noreferrer">
-      <img src={image} alt="github" className={cx('card__image')} />
-      <div>
-        {title && <h3>{title}</h3>}
-        <p>{label}</p>
-      </div>
+    return (
+        <a
+            className={cx('card')}
+            onClick={onClick}
+            href={link} target={'_blank'}
+            rel="noreferrer"
+        >
+            <img src={image} alt="github" className={cx('card__image')}/>
+            <div>
+                {title && <h3>{title}</h3>}
+                <p>{label}</p>
+            </div>
 
-    </a>
-  );
+        </a>
+    );
 };
 
 export default Card;

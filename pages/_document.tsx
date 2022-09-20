@@ -50,6 +50,7 @@ class VcDocument extends Document {
                         crossOrigin="anonymous"
                     />
                     <link href="/fonts/style.css" rel="stylesheet"/>
+                    <title>Bagryancev Maxim CV</title>
                 </Head>
                 <body>
                 <Main/>
