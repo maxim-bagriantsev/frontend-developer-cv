@@ -1,12 +1,12 @@
 @import '../asserts/scss/colors';
 
-.hero {
+.description {
   display: flex;
   flex-direction: column;
-  font-size: 18px;
-  line-height: 22px;
+
   p {
     font-size: 18px;
+    line-height: 22px;
     margin-bottom: 20px;
   }
 }

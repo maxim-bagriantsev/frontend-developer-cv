@@ -12,7 +12,8 @@ import Header from '@components/Header/Header';
 
 import backgroundImage from '../public/images/main-background2.jpg';
 import Description from '@components/Description/Description';
-import Accounts from "@components/Accounts/Accounts";
+import Accounts from '@components/Accounts/Accounts';
+import Experience from "@components/Experience/Experience";
 
 const cx = classNames.bind(styles);
 
@@ -36,7 +37,7 @@ const MainPage = () => {
                 <Accounts/>
             </section>
             <section className={cx('experience')}>
-                experience
+                <Experience/>
             </section>
             <section className={cx('projects')}>
                 projects

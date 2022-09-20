@@ -1,35 +1,6 @@
 .accounts {
   display: flex;
-  width: 100%;
+  max-width: 1170px;
   justify-content: center;
-
-  &__item {
-    display: flex;
-    align-items: center;
-    margin-right: 30px;
-    width: 445px;
-    text-decoration: none;
-    background-color: #fff;
-    border-radius: 16px;
-    justify-content: space-around;
-    padding: 20px;
-    transition: all .2s;
-    box-shadow: 0 0 4px 2px rgb(119 166 236 / 60%);
-
-    &:first-child {
-      margin-right: 30px;
-    }
-
-    p {
-      margin-bottom: 0;
-    }
-
-    &_image {
-      width: 100px;
-    }
-
-    &:hover{
-      transform: scale(.97);
-    }
-  }
+  flex-wrap: nowrap;
 }

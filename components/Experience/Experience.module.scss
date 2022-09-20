@@ -1,0 +1,25 @@
+.experience {
+  display: flex;
+  max-width: 1170px;
+  justify-content: center;
+  flex-direction: column;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+  }
+
+
+  img {
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
