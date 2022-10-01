@@ -10,7 +10,7 @@ import phone from '../../public/icons/social_icons/phone.png';
 import location from '../../public/icons/social_icons/location.png';
 
 const cx = classNames.bind(styles);
-
+import Avatar from '../../public/images/avatar.jpg'
 
 const Hero = () => {
 
@@ -22,6 +22,7 @@ const Hero = () => {
         <Image
           width={300}
           src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+          // src={Avatar.src}
           rootClassName={cx('hero__wrapperImage_image')}
         />
       </div>

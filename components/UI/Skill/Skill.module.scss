@@ -1,0 +1,26 @@
+@import '../asserts/scss/colors';
+
+.skill {
+  width: max-content;
+  border-radius: 20px;
+  display: flex;
+  border: 1px solid $color-gray;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: aliceblue;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+  &__icon {
+    width: 60px;
+    margin-right: 10px;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    color: $color-gray;
+    margin-bottom: 0;
+  }
+}

@@ -1,4 +1,4 @@
-.experience {
+.projects {
   display: flex;
   max-width: 950px;
   justify-content: center;
@@ -6,10 +6,11 @@
 
   &__wrapper {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   &__title {
-    text-align: left;
     margin-bottom: 30px;
     font-size: 36px;
     line-height: 44px;
@@ -18,14 +19,11 @@
 
   img {
     width: 100px;
-    border-radius: 50%;
     overflow: hidden;
   }
-
-
 }
 
-.modalMech {
+.modal {
   width: 800px !important;
 
   h3 {
@@ -40,9 +38,8 @@
     justify-content: space-between;
 
     &__image {
-      border-radius: 50%;
       width: 150px;
-      height: 150px;
+      height: max-content;
       transition: 1s ease-out;
 
       &:hover {

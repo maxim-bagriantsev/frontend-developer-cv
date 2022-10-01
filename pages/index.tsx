@@ -14,6 +14,8 @@ import backgroundImage from '../public/images/main-background2.jpg';
 import Description from '@components/Description/Description';
 import Accounts from '@components/Accounts/Accounts';
 import Experience from "@components/Experience/Experience";
+import Projects from "@components/Projects/Projects";
+import Skills from "@components/Skills/Skills";
 
 const cx = classNames.bind(styles);
 
@@ -22,8 +24,8 @@ const MainPage = () => {
 
     return (
         <main className={cx('main')}>
-            <div className={cx('background')}/>
-            <ModuleSky />
+            <div className={cx('main__background')}/>
+            <ModuleSky/>
             <Header/>
 
             <section>
@@ -40,10 +42,10 @@ const MainPage = () => {
                 <Experience/>
             </section>
             <section className={cx('projects')}>
-                projects
+                <Projects/>
             </section>
             <section className={cx('skills')}>
-                skills
+                <Skills/>
             </section>
             <section className={cx('education')}>
                 education

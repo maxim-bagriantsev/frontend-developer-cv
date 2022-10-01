@@ -1,0 +1,21 @@
+.skills {
+  display: flex;
+  max-width: 950px;
+  justify-content: center;
+  flex-direction: column;
+
+  &__wrapper {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+  }
+}
+
+

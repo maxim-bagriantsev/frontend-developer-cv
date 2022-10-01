@@ -9,7 +9,7 @@
   .button {
     border-radius: 10px;
     cursor: pointer;
-    color: $color-black;
+    color: $color-white;
     background: none;
     margin-right: 10px;
     border: 1px solid $green;
@@ -23,7 +23,7 @@
       box-shadow: $color-button-shadow-green;
 
       & p {
-        font-weight: 600;
+        font-weight: 500;
       }
     }
 
