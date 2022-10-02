@@ -11,6 +11,7 @@
   background-color: aliceblue;
   margin-right: 10px;
   margin-bottom: 10px;
+  transition: all .7s ease-in-out;
 
   &__icon {
     width: 60px;
@@ -22,5 +23,9 @@
     font-weight: 600;
     color: $color-gray;
     margin-bottom: 0;
+    cursor: pointer;
+  }
+  &:hover {
+    transform: scale(.95);
   }
 }

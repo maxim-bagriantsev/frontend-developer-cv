@@ -8,7 +8,7 @@ export const translations = {
             'sendEmail': 'Send E-mail',
             'contactByPhone': 'Contact by Phone',
             'location': 'Russia, Samara region',
-            'description1': 'Hardworking and passionate full-stack developer. Pedantry, determination and commitment in every project are my main strengths.',
+            'description1': 'Hardworking and passionate frontend developer. Pedantry, determination and commitment in every project are my main strengths.',
             'description2': 'I took a part in private as well as commercial projects.',
             'description3': 'I am looking forward to become a part of your team 😉',
             'experience': 'Experience (1+ years)',
@@ -17,6 +17,12 @@ export const translations = {
             'rosneft': 'March 2011 - January 2022',
             'rosneftDescription': 'Development of technical specifications. Scientific and technical support for the implementation of new technologies. I am the author and co-author of scientific and technical articles:Best Practices in Thermal Petrophysics as a Tool for Reducing Uncertainties in Modeling Thermal Studies of Unconventional ReservoirsOptimization of technological solutions in the development of extra-heavy oil deposits based on the study of core and oil properties.A multi-scale method of seismic geomodeling of the development of matter and the development of compacted reservoirs according to the formula of A. Einstein, or if clay could speak.',
             'projects': 'Projects',
+            'education': 'Education',
+            'languages': 'Languages',
+            'languages-russia' : 'Russian:',
+            'languages-english' : 'English:',
+            'languages-russia-des' : ' Native',
+            'languages-english-des' : ' B2, Technical English: documentation reading, correspondence, commenting',
 
             // pwc - project
             'pwc-title-description': 'Educational platform',
@@ -59,7 +65,20 @@ export const translations = {
             'car-sharing-tasks': 'Implementation of the functionality according to the TOR. Participation in the development of the project architecture. Layout according to the layout with adaptation for various devices. Development of UI components. Development of the client part. Development of the admin part',
             'skills': 'Skills',
 
-        }
+            // education SimbirSoft
+            'year': 'August 2021 - December 2021 (Course)',
+            'institution': ' SimbirSoft',
+            'institution_description': ' - IT-company',
+            'faculty': ' Direction:',
+            'faculty__description': ' Frontend-course (JavaScript, React)',
+
+            // education SamGTU
+            'year-higher': '2004 - 2009 (Higher, specialist)',
+            'institution-higher': ' University',
+            'institution_description-higher': ' - Samara State Technical University',
+            'faculty-higher': ' Faculty:',
+            'faculty__description-higher': ' Development of oil and gas fields',
+        },
     },
 
 
@@ -72,7 +91,7 @@ export const translations = {
             'sendEmail': 'Отправить на почту',
             'contactByPhone': 'Позвонить по телефону',
             'location': 'Россия, г. Самара',
-            'description1': 'Трудолюбивый и увлеченный full-stack разработчик. Педантичность, целеустремленность и целеустремленность в каждом проекте – мои сильные стороны.',
+            'description1': 'Трудолюбивый и увлеченный frontend разработчик. Педантичность, целеустремленность в каждом проекте – это мои сильные стороны.',
             'description2': 'Принимал участие как в частных, так и в коммерческих проектах.',
             'description3': 'Я с нетерпением жду возможности стать частью вашей команды 😉',
             'experience': 'Опыт (1+ год)',
@@ -81,6 +100,12 @@ export const translations = {
             'rosneft': 'Март 2011 - Январь 2022',
             'rosneftDescription': 'Разработка технического задания. Научно-техническое сопровождение работ по внедрению новых технологий. Являюсь автором и сооавтором научно-технических статей: Advanced methods of thermal petrophysics as a means to reduce uncertainties during thermal eor modeling of unconventional reservoirs. Optimization of Process Solutions in Developing Extra-Heavy Oil Pools at the Basis of Core Studies and Oil Properties Investigation. Многомасштабный метод сейсмического геомоделирования развития состояния вещества и эволюции уплотненных коллекторов по формуле А. Эйнштейна, или если бы глина умела говорить.',
             'projects': 'Проекты',
+            'education': 'Образование',
+            'languages': 'Языки',
+            'languages-russia' : 'Русский:',
+            'languages-english' : 'Английский:',
+            'languages-russia-des' : ' Носитель',
+            'languages-english-des' : ' B2, Технический английский: чтение документации, переписка, комментирование',
 
             // pwc - project
             'pwc-title-description': 'Образовательная платформа',
@@ -122,6 +147,20 @@ export const translations = {
             'car-sharing-completed-tasks': 'Выполненные задачи',
             'car-sharing-tasks': 'Реализация функционала по ТЗ. Участие в разработке архитектуры проекта. Верстка по макету с адаптацией под различные устройства. Разработка UI компонентов. Разработка клентской части. Разработка админской части',
             'skills': 'Скиллы',
+
+            // education SimbirSoft
+            'year': 'август 2021 - декабрь 2021 гг. (Курсы)',
+            'institution': ' СимбирСофт',
+            'institution_description': ' - IT-компания',
+            'faculty': 'Направление:',
+            'faculty__description': ' Frontend-практикум (JavaScript, React)',
+
+            // education SamGTU
+            'year-higher': '2004 - 2009 гг. (Высшее, специалист)',
+            'institution-higher': 'ВУЗ',
+            'institution_description-higher': ' - Самарский государственный технический университет',
+            'faculty-higher': ' Факультет:',
+            'faculty__description-higher': ' Разработка нефтяных и газовых месторождений',
         }
     }
 };

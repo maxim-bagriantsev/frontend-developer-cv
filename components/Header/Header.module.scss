@@ -24,5 +24,15 @@
         transform: scale(.97);
       }
     }
+
+    .github {
+      position: absolute;
+      margin-left: 200px;
+      transition: all 2s ease-in-out;
+
+      &:hover {
+        transform: translate(350px,0);
+      }
+    }
   }
 }

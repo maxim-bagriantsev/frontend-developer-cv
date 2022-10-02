@@ -1,0 +1,61 @@
+.education {
+  display: flex;
+  max-width: 950px;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  //&__wrapper {
+  //  display: flex;
+  //  justify-content: start;
+  //  flex-wrap: wrap;
+  //}
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+
+    &_title {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 500;
+      margin-bottom: 10px;
+
+
+    }
+
+    &_institution {
+      font-size: 18px;
+      line-height: 24px;
+      margin-left: 20px;
+      margin-bottom: 5px;
+
+      span {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 600;
+      }
+    }
+
+    &_faculty {
+      font-size: 18px;
+      line-height: 24px;
+      margin-left: 20px;
+      margin-bottom: 5px;
+
+      span {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+

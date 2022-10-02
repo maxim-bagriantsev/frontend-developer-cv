@@ -14,50 +14,62 @@ import FigmaIcon from 'public/icons/skills/figma.png'
 export const arraySkills = [
     {
         img: JsIcon,
-        title: 'JavaScript (ES6)'
+        title: 'JavaScript (ES6)',
+        link: 'https://developer.mozilla.org/ru/docs/Web/JavaScript'
     },
     {
         img: TsIcon,
-        title: 'TypeScript'
+        title: 'TypeScript',
+        link: 'https://www.typescriptlang.org/'
     },
     {
         img: ReactIcon,
-        title: 'ReactJS (with Redux, toolkit, typescript)'
+        title: 'ReactJS (with Redux, toolkit, typescript)',
+        link: 'https://reactjs.org/'
     },
     {
         img: NextIcon,
-        title: 'Next.js'
+        title: 'Next.js',
+        link: 'https://nextjs.org/'
     },
     {
         img: NodeIcon,
-        title: 'Node.js'
+        title: 'Node.js',
+        link: 'https://nodejs.org/en/'
     },
     {
         img: CssIcon,
-        title: 'CSS (SASS)'
+        title: 'CSS (SASS)',
+        link: 'https://sass-lang.com/'
     },
     {
         img: HtmlIcon,
-        title: 'HTML'
+        title: 'HTML',
+        link: 'https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/HTML_basics'
     },
     {
         img: SpaIcon,
-        title: 'SPA'
+        title: 'SPA',
+        link: 'https://learn.microsoft.com/ru-ru/archive/msdn-magazine/2013/november/asp-net-single-page-applications-build-modern-responsive-web-apps-with-asp-net'
     },
     {
         img: GitIcon,
-        title: 'Git'
+        title: 'Git',
+        link: 'https://git-scm.com/'
     },
     {
         img: SsrIcon,
-        title: 'SSR'
+        title: 'SSR',
+        link: 'https://blog.logrocket.com/improve-app-performance-react-server-side-rendering/'
     },
     {
         img: ResponsiveIcon,
-        title: 'Responsive Web Design'
+        title: 'Responsive Web Design',
+        link: 'https://www.w3schools.com/html/html_responsive.asp'
     },
     {
         img: FigmaIcon,
-        title: 'Figma'
+        title: 'Figma',
+        link: 'https://www.figma.com/'
     },
 ]

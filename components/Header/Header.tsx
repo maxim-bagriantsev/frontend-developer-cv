@@ -45,7 +45,7 @@ const Header = () => {
                          alt="pdf"
                          className={cx('icon')}/>
                 </a>
-                <a href="https://github.com/maxim-bagriantsev/frontend-developer-cv" target="_blank" rel="noreferrer">
+                <a className={cx('github')} href="https://github.com/maxim-bagriantsev/frontend-developer-cv" target="_blank" rel="noreferrer">
                     <img src={GitHubIcon.src}
                          alt="github"
                          className={cx('icon')}/>

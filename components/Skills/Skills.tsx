@@ -16,7 +16,7 @@ const Skills = () => {
         <div className={cx('skills')}>
             <div className={cx('skills__title')}>{t('skills')}</div>
             <div className={cx('skills__wrapper')}>
-                {arraySkills.map((skill, index) => <Skill key={index} img={skill.img.src} title={skill.title}/>)}
+                {arraySkills.map((skill, index) => <Skill key={index} img={skill.img.src} title={skill.title} link={skill.link}/>)}
 
             </div>
         </div>

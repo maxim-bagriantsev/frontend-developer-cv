@@ -9,14 +9,15 @@ type SkillType = {
     key: number
     img: string
     title: string
+    link: string
 }
 
 const Skill = (props: SkillType) => {
-    const {img, title} = props
+    const {img, title, link} = props
 
     return (
-        <a className={cx('skill')}>
-            <img className={cx('skill__icon')} src={img} alt=""/>
+        <a className={cx('skill')} href={link} target='_blank'>
+            <img className={cx('skill__icon')} src={img} alt="image"/>
             <p className={cx('skill__title')}>{title}</p>
         </a>
     );
