@@ -7,6 +7,7 @@ import PwcIcon from '../../public/icons/projects/pwc.png'
 import SurdoIcon from '../../public/icons/projects/surdo.png'
 import SkillmapsIcon from '../../public/icons/projects/skillmaps.png'
 import CarSharingIcon from '../../public/icons/projects/carSharing.png'
+import MechanicaIcon from '../../public/icons/projects/mechanica.png'
 
 import {Modal} from 'antd';
 
@@ -17,6 +18,7 @@ const Projects = () => {
     const [modalSurdoclassOpen, setModalSurdoclassOpen] = useState(false);
     const [modalSkillmapsOpen, setModalSkillmapsOpen] = useState(false);
     const [modalCarSharingOpen, setModalCarSharingOpen] = useState(false);
+    const [modalMechanicaOpen, setModalMechanicaOpen] = useState(false);
 
     const {t} = useTranslation();
 
@@ -34,6 +36,8 @@ const Projects = () => {
                       onClick={() => setModalSkillmapsOpen(true)}/>
                 <Card image={CarSharingIcon.src} title={'Car-sharing'} label={t('car-sharing-title-description')}
                       onClick={() => setModalCarSharingOpen(true)}/>
+                <Card image={MechanicaIcon.src} title={'Mechanica'} label={t('mechanica-title-description')}
+                      onClick={() => setModalMechanicaOpen(true)}/>
 
                 <Modal
                     className={cx('modal')}
@@ -115,6 +119,27 @@ const Projects = () => {
                             <p>{t('car-sharing-technologies')}</p>
                             <p style={{fontWeight: 600}}>{t('car-sharing-completed-tasks')}</p>
                             <p>{t('car-sharing-tasks')}</p>
+                        </div>
+                    </div>
+                </Modal>
+
+                <Modal
+                    className={cx('modal')}
+                    visible={modalMechanicaOpen}
+                    onOk={() => setModalMechanicaOpen(false)}
+                    onCancel={() => setModalMechanicaOpen(false)}
+                >
+                    <h3>Mechanica - project</h3>
+                    <div className={cx('experienceModal')}>
+                        <img src={MechanicaIcon.src} alt="" className={cx('experienceModal__image')}/>
+                        <div className={cx('experienceModal__wrapper')}>
+                            <p>{t('mechanica-description')}</p>
+                            <p style={{fontWeight: 600}}>{t('mechanica-involvement')}</p>
+                            <p>{t('mechanica-involvement-description')}</p>
+                            <p style={{fontWeight: 600}}>{t('mechanica-used-technologies')}</p>
+                            <p>{t('mechanica-technologies')}</p>
+                            <p style={{fontWeight: 600}}>{t('mechanica-completed-tasks')}</p>
+                            <p>{t('mechanica-tasks')}</p>
                         </div>
                     </div>
                 </Modal>

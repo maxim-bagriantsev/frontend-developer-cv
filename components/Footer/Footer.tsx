@@ -1,10 +1,12 @@
 import React from 'react';
+import styles from './Footer.module.scss'
+import classNames from "classnames/bind";
+
+const cx = classNames.bind(styles);
 
 const Footer = () => {
   return (
-    <footer>
-      footer
-    </footer>
+      <div className={cx('footer')}>BagryancevM CV, 2022</div>
   );
 };
 

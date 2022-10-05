@@ -63,7 +63,17 @@ export const translations = {
             'car-sharing-technologies': 'React.js, Redux.js, SASS preprocessor, Axios, Yandex.Map javascript API, antd UI library',
             'car-sharing-completed-tasks': 'Completed tasks',
             'car-sharing-tasks': 'Implementation of the functionality according to the TOR. Participation in the development of the project architecture. Layout according to the layout with adaptation for various devices. Development of UI components. Development of the client part. Development of the admin part',
-            'skills': 'Skills',
+            'mechanica-skills': 'Skills',
+
+            // mechanica - project
+            'mechanica-title-description': 'Corporate website',
+            'mechanica-description': 'development of digital services for large and medium-sized businesses (ex-ANMEDIO)',
+            'mechanica-involvement': 'Involvement in the project',
+            'mechanica-involvement-description': 'Full. Creating a project from scratch.',
+            'mechanica-used-technologies': 'Used technologies',
+            'mechanica-technologies': 'React.js, SASS preprocessor, UI library',
+            'mechanica-completed-tasks': 'Completed tasks',
+            'mechanica-tasks': 'Participation in the development of the project architecture. Layout according to the layout with adaptation for various devices. Development of UI components. ',
 
             // education SimbirSoft
             'year': 'August 2021 - December 2021 (Course)',
@@ -146,7 +156,20 @@ export const translations = {
             'car-sharing-technologies': 'React.js, Redux.js, SASS preprocessor, Axios, Yandex.Map javascript API, UI библиотека antd',
             'car-sharing-completed-tasks': 'Выполненные задачи',
             'car-sharing-tasks': 'Реализация функционала по ТЗ. Участие в разработке архитектуры проекта. Верстка по макету с адаптацией под различные устройства. Разработка UI компонентов. Разработка клентской части. Разработка админской части',
-            'skills': 'Скиллы',
+
+
+            // mechanica - project
+            'mechanica-title-description': 'Корпоротивный сайт',
+            'mechanica-description': 'Mechanica — разработка digital-сервисов для крупного и среднего бизнеса (ex-ANMEDIO)',
+            'mechanica-involvement': 'Вовлеченность в проект',
+            'mechanica-involvement-description': 'Полная. Создание проекта с нуля.',
+            'mechanica-used-technologies': 'Используемые технологии',
+            'mechanica-technologies': 'React.js, SASS preprocessor, UI library',
+            'mechanica-completed-tasks': 'Выполненные задачи',
+            'mechanica-tasks': 'Участие в разработке архитектуры проекта. Вёрстка по макету с адаптацией под различные устройства. Разработка UI-компонентов.',
+
+
+
 
             // education SimbirSoft
             'year': 'август 2021 - декабрь 2021 гг. (Курсы)',

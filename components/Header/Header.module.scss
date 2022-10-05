@@ -2,9 +2,12 @@
   display: flex;
   width: 100vw;
   z-index: 100;
-  position: absolute;
-  top: 0;
+  //position: absolute;
   height: 60px;
+  //top: 0;
+  position: sticky;
+  top: -50px;
+  transition: all 0.5s ease-in-out;
 
   &__wrapper {
     display: flex;
@@ -13,6 +16,10 @@
     max-width: 1170px;
     align-items: center;
     justify-content: flex-start;
+
+    height: 70px;
+    position: sticky;
+    top: 0;
 
     .icon {
       width: 30px;
@@ -31,8 +38,12 @@
       transition: all 2s ease-in-out;
 
       &:hover {
-        transform: translate(350px,0);
+        transform: translate(350px, 0);
       }
     }
   }
+}
+
+.hide-header {
+  height: 0;
 }

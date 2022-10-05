@@ -1,5 +1,5 @@
 // ** React Imports
-import React, {useState} from 'react';
+import React, { useState} from 'react';
 
 // ** Imports i18n
 import {useTranslation} from 'react-i18next';
@@ -23,7 +23,9 @@ const Header = () => {
     const [isActiveEn, setIsActiveEn] = useState(true);
     const [isActiveRu, setIsActiveRu] = useState(false);
 
+
     const {t, i18n} = useTranslation();
+
 
     const changeLanguage = (language: string) => {
         if (language === 'ru') {
@@ -36,24 +38,28 @@ const Header = () => {
         }
         i18n.changeLanguage(language);
     };
-    return (
-        <header className={cx('header')}>
-            <div className={cx('header__wrapper')}>
-                <ChangeLanguage changeLanguage={changeLanguage} isActiveEn={isActiveEn} isActiveRu={isActiveRu}/>
-                <a href="https://github.com/maxim-bagriantsev/frontend-developer-cv" target="_blank" rel="noreferrer">
-                    <img src={PdfIcon.src}
-                         alt="pdf"
-                         className={cx('icon')}/>
-                </a>
-                <a className={cx('github')} href="https://github.com/maxim-bagriantsev/frontend-developer-cv" target="_blank" rel="noreferrer">
-                    <img src={GitHubIcon.src}
-                         alt="github"
-                         className={cx('icon')}/>
-                </a>
-            </div>
 
-        </header>
-    );
+
+return (
+
+    <header className={cx('header')} id={'header'}>
+        <div className={cx('header__wrapper')}>
+            <ChangeLanguage changeLanguage={changeLanguage} isActiveEn={isActiveEn} isActiveRu={isActiveRu}/>
+            <a href="https://github.com/maxim-bagriantsev/frontend-developer-cv" target="_blank" rel="noreferrer">
+                <img src={PdfIcon.src}
+                     alt="pdf"
+                     className={cx('icon')}/>
+            </a>
+            <a className={cx('github')} href="https://github.com/maxim-bagriantsev/frontend-developer-cv"
+               target="_blank" rel="noreferrer">
+                <img src={GitHubIcon.src}
+                     alt="github"
+                     className={cx('icon')}/>
+            </a>
+        </div>
+
+    </header>
+);
 };
 
 export default Header;

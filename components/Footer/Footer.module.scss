@@ -1,0 +1,10 @@
+@import "asserts/scss/colors";
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color:$color-white ;
+  font-weight: 400;
+}

@@ -18,6 +18,7 @@ import Projects from "@components/Projects/Projects";
 import Skills from "@components/Skills/Skills";
 import Education from "@components/Education/Education";
 import Languages from "@components/Languages/Languages";
+import Footer from "@components/Footer/Footer";
 
 const cx = classNames.bind(styles);
 
@@ -56,7 +57,7 @@ const MainPage = () => {
                 <Languages/>
             </section>
             <footer>
-                footer
+                <Footer/>
             </footer>
         </main>
     );
