@@ -1,6 +1,35 @@
+@import '../asserts/scss/screens';
+
 .accounts {
   display: flex;
-  max-width: 1170px;
+  max-width: 950px;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-direction: column;
+
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 18px;
+      font-size: 24px;
+      line-height: 22px;
+    }
+  }
 }

@@ -1,3 +1,5 @@
+@import '../asserts/scss/screens';
+
 .card {
   display: flex;
   align-items: center;
@@ -10,11 +12,34 @@
   padding: 20px;
   margin-bottom: 30px;
   transition: all .2s;
-  //box-shadow: 0 0 4px 2px rgb(119 166 236 / 60%);
   box-shadow: 0 0 2px 2px rgb(139 246 157 / 30%);
+
+  @media screen and (max-width: $tablet) {
+    width: 350px;
+    //margin-right: 0;
+  }
+
+  @media screen and (max-width: $mobile) {
+    width: 350px;
+    margin-right: 0;
+  }
+
+
+  @media screen and (max-width: $mobile-small) {
+    width: 250px;
+    margin-right: 0;
+  }
 
   &:first-child {
     margin-right: 30px;
+
+    @media screen and (max-width: $tablet) {
+      margin-right: 30px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      margin-right: 0;
+    }
   }
 
   h3 {
@@ -22,6 +47,12 @@
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 20px;
+
+    @media screen and (max-width: $tablet) {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 5px;
+    }
   }
 
   p {
@@ -31,10 +62,20 @@
     margin-bottom: 0;
     font-weight: 500;
     color: initial;
+
+    @media screen and (max-width: $mobile-small) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 
   &__image {
     width: 100px;
+
+    @media screen and (max-width: $mobile-small) {
+      margin-right: 20px;
+      width: 60px;
+    }
   }
 
   &:hover {

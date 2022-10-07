@@ -16,13 +16,15 @@ export const translations = {
             'mechDescription': 'Designing react components, implementation of new features, fixing bugs, reworking the old (legacy) react code into a new one that meets new standards (class → functional with hooks).',
             'rosneft': 'March 2011 - January 2022',
             'rosneftDescription': 'Development of technical specifications. Scientific and technical support for the implementation of new technologies. I am the author and co-author of scientific and technical articles:Best Practices in Thermal Petrophysics as a Tool for Reducing Uncertainties in Modeling Thermal Studies of Unconventional ReservoirsOptimization of technological solutions in the development of extra-heavy oil deposits based on the study of core and oil properties.A multi-scale method of seismic geomodeling of the development of matter and the development of compacted reservoirs according to the formula of A. Einstein, or if clay could speak.',
+            'accounts': 'Accounts',
             'projects': 'Projects',
             'education': 'Education',
+            'skills': 'Skills',
             'languages': 'Languages',
-            'languages-russia' : 'Russian:',
-            'languages-english' : 'English:',
-            'languages-russia-des' : ' Native',
-            'languages-english-des' : ' B2, Technical English: documentation reading, correspondence, commenting',
+            'languages-russia': 'Russian:',
+            'languages-english': 'English:',
+            'languages-russia-des': ' Native',
+            'languages-english-des': ' B1, Technical English: documentation reading, correspondence, commenting',
 
             // pwc - project
             'pwc-title-description': 'Educational platform',
@@ -77,20 +79,19 @@ export const translations = {
 
             // education SimbirSoft
             'year': 'August 2021 - December 2021 (Course)',
-            'institution': ' SimbirSoft',
+            'institution': 'SimbirSoft',
             'institution_description': ' - IT-company',
-            'faculty': ' Direction:',
+            'faculty': 'Direction:',
             'faculty__description': ' Frontend-course (JavaScript, React)',
 
             // education SamGTU
             'year-higher': '2004 - 2009 (Higher, specialist)',
-            'institution-higher': ' University',
+            'institution-higher': 'University',
             'institution_description-higher': ' - Samara State Technical University',
-            'faculty-higher': ' Faculty:',
+            'faculty-higher': 'Faculty:',
             'faculty__description-higher': ' Development of oil and gas fields',
         },
     },
-
 
     ru: {
         translation: {
@@ -109,13 +110,15 @@ export const translations = {
             'mechDescription': 'Проектирование компонентов реагирования, внедрение новых функций, исправление ошибок, переработка старого (унаследованного) кода реагирования в новый, отвечающий новым стандартам (класс → функционал с хуками).',
             'rosneft': 'Март 2011 - Январь 2022',
             'rosneftDescription': 'Разработка технического задания. Научно-техническое сопровождение работ по внедрению новых технологий. Являюсь автором и сооавтором научно-технических статей: Advanced methods of thermal petrophysics as a means to reduce uncertainties during thermal eor modeling of unconventional reservoirs. Optimization of Process Solutions in Developing Extra-Heavy Oil Pools at the Basis of Core Studies and Oil Properties Investigation. Многомасштабный метод сейсмического геомоделирования развития состояния вещества и эволюции уплотненных коллекторов по формуле А. Эйнштейна, или если бы глина умела говорить.',
+            'accounts': 'Аккаунты',
             'projects': 'Проекты',
             'education': 'Образование',
+            'skills': 'Скиллы',
             'languages': 'Языки',
-            'languages-russia' : 'Русский:',
-            'languages-english' : 'Английский:',
-            'languages-russia-des' : ' Носитель',
-            'languages-english-des' : ' B2, Технический английский: чтение документации, переписка, комментирование',
+            'languages-russia': 'Русский:',
+            'languages-english': 'Английский:',
+            'languages-russia-des': ' Носитель',
+            'languages-english-des': ' B1, Технический английский: чтение документации, переписка, комментирование',
 
             // pwc - project
             'pwc-title-description': 'Образовательная платформа',
@@ -157,7 +160,6 @@ export const translations = {
             'car-sharing-completed-tasks': 'Выполненные задачи',
             'car-sharing-tasks': 'Реализация функционала по ТЗ. Участие в разработке архитектуры проекта. Верстка по макету с адаптацией под различные устройства. Разработка UI компонентов. Разработка клентской части. Разработка админской части',
 
-
             // mechanica - project
             'mechanica-title-description': 'Корпоротивный сайт',
             'mechanica-description': 'Mechanica — разработка digital-сервисов для крупного и среднего бизнеса (ex-ANMEDIO)',
@@ -168,12 +170,9 @@ export const translations = {
             'mechanica-completed-tasks': 'Выполненные задачи',
             'mechanica-tasks': 'Участие в разработке архитектуры проекта. Вёрстка по макету с адаптацией под различные устройства. Разработка UI-компонентов.',
 
-
-
-
             // education SimbirSoft
             'year': 'август 2021 - декабрь 2021 гг. (Курсы)',
-            'institution': ' СимбирСофт',
+            'institution': 'СимбирСофт',
             'institution_description': ' - IT-компания',
             'faculty': 'Направление:',
             'faculty__description': ' Frontend-практикум (JavaScript, React)',

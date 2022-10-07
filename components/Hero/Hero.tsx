@@ -21,8 +21,8 @@ const Hero = () => {
       <div className={cx('hero__wrapperImage')}>
         <Image
           width={300}
-          src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
-          // src={Avatar.src}
+          // src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+          src={Avatar.src}
           rootClassName={cx('hero__wrapperImage_image')}
         />
       </div>

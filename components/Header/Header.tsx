@@ -23,7 +23,6 @@ const Header = () => {
     const [isActiveEn, setIsActiveEn] = useState(true);
     const [isActiveRu, setIsActiveRu] = useState(false);
 
-
     const {t, i18n} = useTranslation();
 
 

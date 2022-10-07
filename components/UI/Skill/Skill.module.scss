@@ -1,4 +1,5 @@
 @import '../asserts/scss/colors';
+@import '../asserts/scss/screens';
 
 .skill {
   width: max-content;
@@ -13,9 +14,20 @@
   margin-bottom: 10px;
   transition: all .7s ease-in-out;
 
+  @media screen and (max-width: $tablet) {
+    padding: 5px 8px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
   &__icon {
     width: 60px;
     margin-right: 10px;
+
+    @media screen and (max-width: $tablet) {
+      width: 30px;
+      margin-right: 5px;
+    }
   }
 
   &__title {
@@ -24,6 +36,10 @@
     color: $color-gray;
     margin-bottom: 0;
     cursor: pointer;
+
+    @media screen and (max-width: $tablet) {
+      font-size: 14px;
+    }
   }
   &:hover {
     transform: scale(.95);

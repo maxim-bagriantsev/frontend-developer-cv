@@ -2,11 +2,9 @@
   display: flex;
   width: 100vw;
   z-index: 100;
-  //position: absolute;
   height: 60px;
-  //top: 0;
   position: sticky;
-  top: -50px;
+  top: -60px;
   transition: all 0.5s ease-in-out;
 
   &__wrapper {
@@ -15,9 +13,9 @@
     width: calc(100% - 40px);
     max-width: 1170px;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
 
-    height: 70px;
+    height: 60px;
     position: sticky;
     top: 0;
 
@@ -31,19 +29,6 @@
         transform: scale(.97);
       }
     }
-
-    .github {
-      position: absolute;
-      margin-left: 200px;
-      transition: all 2s ease-in-out;
-
-      &:hover {
-        transform: translate(350px, 0);
-      }
-    }
   }
 }
 
-.hide-header {
-  height: 0;
-}

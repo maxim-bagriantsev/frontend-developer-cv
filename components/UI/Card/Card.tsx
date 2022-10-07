@@ -23,7 +23,7 @@ const Card = (props: Card) => {
             rel="noreferrer"
         >
             <img src={image} alt="github" className={cx('card__image')}/>
-            <div>
+            <div className={cx('card__description')}>
                 {title && <h3>{title}</h3>}
                 <p>{label}</p>
             </div>

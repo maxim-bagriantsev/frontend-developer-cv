@@ -24,17 +24,28 @@ const cx = classNames.bind(styles);
 
 
 const MainPage = () => {
+    const [scroll, setScroll] = React.useState(0);
 
+    const handleScroll = () => {
+        setScroll(window.scrollY);
+    };
+    console.log(scroll)
+    const handleUpButton = () => {
+        window.scrollTo(0, 0);
+    };
+
+    React.useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
     return (
         <main className={cx('main')}>
             <div className={cx('main__background')}/>
             <ModuleSky/>
             <Header/>
-
             <section>
                 <Hero/>
             </section>
-
             <section className={cx('description')}>
                 <Description/>
             </section>

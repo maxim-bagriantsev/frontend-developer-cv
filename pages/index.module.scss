@@ -1,4 +1,5 @@
 @import '../asserts/scss/helpers/helpers.scss';
+@import '../asserts/scss/screens';
 
 .main {
   display: flex;
@@ -6,17 +7,19 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  padding: 80px 0 40px;
-  overflow: auto;
+  padding: 0px 0 40px;
+  overflow-y: auto;
+  overflow-x: hidden;
   background-size: 100%;
 
   &__background {
+
     position: absolute;
     width: 100%;
     height: 100vh;
     z-index: -10;
     top: 0;
-    overflow: hidden;
+
     background-image: url("../public/images/banner1.jpg");
     background-size: 100%;
   }
@@ -28,9 +31,12 @@
     display: flex;
     justify-content: center;
     background-color: hsla(0, 0%, 100%, .8);
-    //z-index: 10;
     border-radius: 10px;
     margin-bottom: 100px;
+
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 50px;
+    }
   }
 }
 

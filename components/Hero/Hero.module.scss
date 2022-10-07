@@ -1,4 +1,5 @@
 @import '../asserts/scss/colors';
+@import '../asserts/scss/screens';
 
 .hero {
   width: 100%;
@@ -6,13 +7,28 @@
   display: flex;
   justify-content: space-around;
 
+  @media screen and (max-width: $tablet) {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   &__wrapperImage {
     width: max-content;
     border-radius: 50%;
     box-shadow: 0 0 4px 3px rgb(139 246 157 / 60%);
 
+
+
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 20px;
+      box-shadow: none;
+    }
+
     &_image img {
       border-radius: 50%;
+
+
     }
 
     & div {
@@ -20,6 +36,10 @@
 
       &:hover {
         border-radius: 50%;
+
+        @media screen and (max-width: $tablet) {
+          border: none;
+        }
       }
     }
   }
@@ -28,12 +48,25 @@
     display: flex;
     flex-direction: column;
 
-
     .title {
       font-size: 38px;
       line-height: 44px;
       margin-bottom: 20px;
       font-weight: 700;
+
+      @media screen and (max-width: $mobile-small) {
+        text-align: center;
+        font-size: 23px;
+        line-height: 24px;
+        margin-bottom: 20px;
+      }
+
+      @media screen and (max-width: $tablet) {
+        text-align: center;
+        font-size: 26px;
+        line-height: 24px;
+        margin-bottom: 20px;
+      }
     }
 
     .subTitle {
@@ -44,11 +77,20 @@
       &__directions {
         margin-bottom: 10px;
         font-size: 22px;
+
+        @media screen and (max-width: $tablet) {
+          font-size: 18px;
+          text-align: center;
+        }
       }
 
       &__stack {
         font-size: 22px;
         opacity: .6;
+        @media screen and (max-width: $tablet) {
+          font-size: 18px;
+          text-align: center;
+        }
       }
     }
   }
@@ -67,7 +109,6 @@
       font-size: 14px;
       line-height: 20px;
       margin-bottom: 10px;
-
 
 
       &_link {

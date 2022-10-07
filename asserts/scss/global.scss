@@ -4,7 +4,7 @@
 
 
 .not-scrollable {
-  overflow-y: hidden;
+  //overflow-y: hidden;
 }
 
 .background {
@@ -149,9 +149,20 @@ h3 {
 }
 
 
+
 .ant-modal-content {
   border-radius: 16px !important;
 }
 .ant-modal-body{
   border: none!important;
+}
+
+.ant-image {
+
+
+  @media screen and (max-width: 420px) {
+    margin: 0 auto;
+    width: 240px!important;
+    max-width: 240px!important;
+  }
 }

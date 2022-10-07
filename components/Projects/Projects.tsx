@@ -26,7 +26,6 @@ const Projects = () => {
         <div className={cx('projects')}>
             <div className={cx('projects__title')}>{t('projects')}</div>
             <div className={cx('projects__wrapper')}>
-
                 <Card image={PwcIcon.src} title={'PWC'} label={t('pwc-title-description')}
                       onClick={() => setModalPwcOpen(true)}/>
                 <Card image={SurdoIcon.src} title={'Surdoclass'} label={t('surdoclass-title-description')}

@@ -1,3 +1,5 @@
+@import '../asserts/scss/screens';
+
 .experience {
   display: flex;
   max-width: 950px;
@@ -6,6 +8,10 @@
 
   &__wrapper {
     display: flex;
+
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -14,15 +20,27 @@
     font-size: 36px;
     line-height: 44px;
     font-weight: 600;
+
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 18px;
+      font-size: 24px;
+      line-height: 22px;
+    }
   }
 
   img {
     width: 100px;
     border-radius: 50%;
     overflow: hidden;
+
+    @media screen and (max-width: $desktop) {
+      width: 100px;
+    }
+
+    @media screen and (max-width: $mobile-small) {
+      width: 60px;
+    }
   }
-
-
 }
 
 .modalMech {

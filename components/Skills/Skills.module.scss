@@ -1,8 +1,16 @@
+@import '../asserts/scss/screens';
+
 .skills {
   display: flex;
   max-width: 950px;
   justify-content: center;
   flex-direction: column;
+
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+
+    flex-wrap: nowrap;
+  }
 
   &__wrapper {
     display: flex;
@@ -15,6 +23,12 @@
     font-size: 36px;
     line-height: 44px;
     font-weight: 600;
+
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 10px;
+      font-size: 24px;
+      line-height: 22px;
+    }
   }
 }
 
