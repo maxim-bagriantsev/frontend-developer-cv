@@ -1,7 +1,13 @@
+// ** React Imports
 import React from 'react';
-import {Button} from "antd";
+
+// ** Styles Imports
 import classNames from "classnames/bind";
 import styles from "./ChangeLanguage.module.scss";
+
+// ** Antd Imports
+import {Button} from "antd";
+
 
 const cx = classNames.bind(styles);
 
@@ -11,8 +17,10 @@ type ChangeLanguage = {
     isActiveRu: boolean
 }
 
+
 export const ChangeLanguage = (props: ChangeLanguage) => {
     const {changeLanguage, isActiveEn, isActiveRu} = props
+
     return (
         <div className={cx('changeLanguage')}>
             <Button type='primary' onClick={() => changeLanguage('en')}

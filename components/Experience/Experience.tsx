@@ -1,11 +1,23 @@
+// ** React Imports
 import React, {useState} from 'react';
+
+// ** Imports i18n
+import {useTranslation} from 'react-i18next';
+
+// ** Styles Imports
 import classNames from 'classnames/bind';
 import styles from './Experience.module.scss';
-import Card from '@UI/Card/Card';
-import {useTranslation} from 'react-i18next';
+
+// ** Antd Imports
+import {Modal} from 'antd';
+
+// ** Icons Imports
+
 import MechanicaIcon from '../../public/images/mechanica.png'
 import RosneftIcon from '../../public/images/rosneft.jpg'
-import {Modal} from 'antd';
+
+// ** Components Imports
+import Card from '@UI/Card/Card';
 
 const cx = classNames.bind(styles);
 

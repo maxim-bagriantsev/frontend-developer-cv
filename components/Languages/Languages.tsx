@@ -1,9 +1,15 @@
+// ** React Imports
 import React from 'react';
-import classNames from 'classnames/bind';
-import styles from './Languages.module.scss';
+
+// ** Imports i18n
 import {useTranslation} from 'react-i18next';
 
+// ** Styles Imports
+import classNames from 'classnames/bind';
+import styles from './Languages.module.scss';
+
 const cx = classNames.bind(styles);
+
 
 const Languages = () => {
 

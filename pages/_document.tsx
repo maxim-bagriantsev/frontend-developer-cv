@@ -1,4 +1,7 @@
+// ** React Imports
 import React from 'react';
+
+// ** Next Imports
 import Document, {
     Html,
     Head,

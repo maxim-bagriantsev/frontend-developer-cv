@@ -1,15 +1,26 @@
+// ** React Imports
 import React from 'react';
+
+// ** Imports i18n
+import {useTranslation} from "react-i18next";
+
+// ** Styles Imports
 import classNames from 'classnames/bind';
 import styles from './Accounts.module.scss';
-import GitHub from '../../public/icons/social_icons/github_logo.png';
+
+// ** Icons Imports
+import GitHub from '../../public/icons/social_icons/github.png';
 import Habr from '../../public/icons/social_icons/habr_logo.png';
+
+// ** Components Imports
 import Card from '@UI/Card/Card';
-import {useTranslation} from "react-i18next";
 
 const cx = classNames.bind(styles);
 
+
 const Accounts = () => {
     const {t} = useTranslation();
+
     return (
         <div className={cx('accounts')}>
             <div className={cx('accounts__title')}>{t('accounts')}</div>

@@ -1,8 +1,12 @@
+// ** React Imports
 import React from 'react';
+
+// ** Styles Imports
 import classNames from 'classnames/bind';
 import styles from './Card.module.scss';
 
 const cx = classNames.bind(styles);
+
 type Card = {
     link?: string
     image?: string | undefined
@@ -10,6 +14,7 @@ type Card = {
     title?: string
     onClick?: () => void
 }
+
 
 const Card = (props: Card) => {
 
@@ -27,7 +32,6 @@ const Card = (props: Card) => {
                 {title && <h3>{title}</h3>}
                 <p>{label}</p>
             </div>
-
         </a>
     );
 };

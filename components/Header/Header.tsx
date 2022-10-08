@@ -4,27 +4,26 @@ import React, {useState} from 'react';
 // ** Imports i18n
 import {useTranslation} from 'react-i18next';
 
-// ** Styles
+// ** Styles Imports
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 
-// ** Antd
+// ** Antd Imports
 import {ChangeLanguage} from '@components/ChangeLanguage/ChangeLanguage';
 
-// ** Icons
+// ** Icons Imports
 import GitHubIcon from '../../public/icons/social_icons/github.png';
 import PdfIcon from '../../public/icons/social_icons/pdf.png';
-
 
 const cx = classNames.bind(styles);
 
 
 const Header = () => {
+
     const [isActiveEn, setIsActiveEn] = useState(false);
     const [isActiveRu, setIsActiveRu] = useState(true);
 
-    const {t, i18n} = useTranslation();
-
+    const {i18n} = useTranslation();
 
     const changeLanguage = (language: string) => {
         if (language === 'ru') {
@@ -40,7 +39,6 @@ const Header = () => {
 
 
     return (
-
         <header className={cx('header')} id={'header'}>
             <div className={cx('header__wrapper')}>
                 <ChangeLanguage changeLanguage={changeLanguage} isActiveEn={isActiveEn} isActiveRu={isActiveRu}/>
@@ -64,7 +62,6 @@ const Header = () => {
                          className={cx('icon')}/>
                 </a>
             </div>
-
         </header>
     );
 };

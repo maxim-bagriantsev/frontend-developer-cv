@@ -1,9 +1,16 @@
-import React from 'react';
-import classNames from 'classnames/bind';
-import styles from './Education.module.scss';
+// ** React Imports
+import React, {useState} from 'react';
+
+// ** Imports i18n
 import {useTranslation} from 'react-i18next';
 
+// ** Styles Imports
+import classNames from 'classnames/bind';
+import styles from './Education.module.scss';
+
+
 const cx = classNames.bind(styles);
+
 
 const Education = () => {
 

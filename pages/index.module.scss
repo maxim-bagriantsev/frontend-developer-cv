@@ -1,5 +1,5 @@
-@import '../asserts/scss/helpers/helpers.scss';
-@import '../asserts/scss/screens';
+@import 'asserts/scss/helpers/helpers.scss';
+@import '/asserts/scss/screens';
 
 .main {
   display: flex;
@@ -7,20 +7,18 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  padding: 0px 0 40px;
+  padding: 0 0 40px;
   overflow-y: auto;
   overflow-x: hidden;
   background-size: 100%;
 
   &__background {
-
     position: absolute;
     width: 100%;
     height: 100vh;
     z-index: -10;
     top: 0;
-
-    background-image: url("../public/images/banner1.jpg");
+    background-image: url("../public/images/banner.jpg");
     background-size: 100%;
   }
 

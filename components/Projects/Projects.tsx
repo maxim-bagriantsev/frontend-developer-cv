@@ -1,19 +1,32 @@
+// ** React Imports
 import React, {useState} from 'react';
+
+// ** Imports i18n
+import {useTranslation} from 'react-i18next';
+
+// ** Styles Imports
 import classNames from 'classnames/bind';
 import styles from './Projects.module.scss';
+
+
 import Card from '@UI/Card/Card';
-import {useTranslation} from 'react-i18next';
+
+
+// ** Antd Imports
+import {Modal} from 'antd';
+
+// ** Icons Imports
 import PwcIcon from '../../public/icons/projects/pwc.png'
 import SurdoIcon from '../../public/icons/projects/surdo.png'
 import SkillmapsIcon from '../../public/icons/projects/skillmaps.png'
 import CarSharingIcon from '../../public/icons/projects/carSharing.png'
 import MechanicaIcon from '../../public/icons/projects/mechanica.png'
 
-import {Modal} from 'antd';
-
 const cx = classNames.bind(styles);
 
+
 const Projects = () => {
+
     const [modalPwcOpen, setModalPwcOpen] = useState(false);
     const [modalSurdoclassOpen, setModalSurdoclassOpen] = useState(false);
     const [modalSkillmapsOpen, setModalSkillmapsOpen] = useState(false);
@@ -37,7 +50,6 @@ const Projects = () => {
                       onClick={() => setModalCarSharingOpen(true)}/>
                 <Card image={MechanicaIcon.src} title={'Mechanica'} label={t('mechanica-title-description')}
                       onClick={() => setModalMechanicaOpen(true)}/>
-
                 <Modal
                     className={cx('modal')}
                     visible={modalPwcOpen}
@@ -62,7 +74,6 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-
                 </Modal>
                 <Modal
                     className={cx('modal')}

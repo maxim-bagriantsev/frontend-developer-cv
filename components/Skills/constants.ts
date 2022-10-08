@@ -1,3 +1,4 @@
+// ** Icons Imports
 import JsIcon from 'public/icons/skills/js.png'
 import TsIcon from 'public/icons/skills/ts.png'
 import ReactIcon from 'public/icons/skills/react.png'
@@ -10,6 +11,7 @@ import SpaIcon from 'public/icons/skills/spa.png'
 import SsrIcon from 'public/icons/skills/ssr.png'
 import ResponsiveIcon from 'public/icons/skills/responsive.jpg'
 import FigmaIcon from 'public/icons/skills/figma.png'
+import AtlassianIcon from 'public/icons/skills/atlassian.png'
 
 export const arraySkills = [
     {
@@ -71,5 +73,10 @@ export const arraySkills = [
         img: FigmaIcon,
         title: 'Figma',
         link: 'https://www.figma.com/'
+    },
+    {
+        img: AtlassianIcon,
+        title: 'Atlassian',
+        link: 'https://www.atlassian.com/ru'
     },
 ]

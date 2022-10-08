@@ -1,7 +1,9 @@
+// ** React Imports
 import React from 'react';
+
+// ** Styles Imports
 import classNames from "classnames/bind";
 import styles from "./Skill.module.scss";
-import JsIcon from '../../../public/icons/skills/js.png'
 
 const cx = classNames.bind(styles);
 
@@ -11,6 +13,7 @@ type SkillType = {
     title: string
     link: string
 }
+
 
 const Skill = (props: SkillType) => {
     const {img, title, link} = props
