@@ -2,7 +2,7 @@
   "name": "bagryancev-vc",
   "version": "0.0.1",
   "main": "index.js",
-  "repository": "https://gitlab.com/r.nihotin/skillmap-mvp.git",
+  "repository": "https://github.com/maxim-bagriantsev/frontend-developer-cv",
   "author": "Bagryantcev Maxim <bagryancevm@gmail.com>",
   "license": "MIT",
   "private": true,
