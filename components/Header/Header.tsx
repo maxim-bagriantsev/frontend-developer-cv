@@ -44,13 +44,21 @@ const Header = () => {
         <header className={cx('header')} id={'header'}>
             <div className={cx('header__wrapper')}>
                 <ChangeLanguage changeLanguage={changeLanguage} isActiveEn={isActiveEn} isActiveRu={isActiveRu}/>
-                <a href="https://github.com/maxim-bagriantsev/frontend-developer-cv" target="_blank" rel="noreferrer">
+                <a
+                    href='/Bagryancev_Maxim_VC.pdf'
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <img src={PdfIcon.src}
                          alt="pdf"
                          className={cx('icon')}/>
                 </a>
-                <a className={cx('github')} href="https://github.com/maxim-bagriantsev/frontend-developer-cv"
-                   target="_blank" rel="noreferrer">
+                <a
+                    className={cx('github')}
+                    href="https://github.com/maxim-bagriantsev/frontend-developer-cv"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <img src={GitHubIcon.src}
                          alt="github"
                          className={cx('icon')}/>

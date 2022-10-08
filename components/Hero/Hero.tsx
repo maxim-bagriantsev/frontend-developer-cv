@@ -39,12 +39,12 @@ const Hero = () => {
                rel="noreferrer">{t('contactByTelegram')}</a>
           </div>
           <div  className={cx('contacts__item')}>
-            <img className={cx('contacts__icon')} src={email.src} alt="telegram" />
-            <a type="m" target={'_blank'} href={'https://t.me/MaximBagriantsev'} className={cx('contacts__item_link')}
+            <img className={cx('contacts__icon')} src={email.src} alt="email" />
+            <a type="m" target={'_blank'} href={'bagryancevm@gmail.com'} className={cx('contacts__item_link')}
                rel="noreferrer">{t('sendEmail')}</a>
           </div>
           <div  className={cx('contacts__item')}>
-            <img className={cx('contacts__icon')} src={phone.src} alt="telegram" />
+            <img className={cx('contacts__icon')} src={phone.src} alt="phone" />
             <a type="m" target={'_blank'} href={'tel:+79639152131'} className={cx('contacts__item_link')}
                rel="noreferrer">{t('contactByPhone')}</a>
           </div>
