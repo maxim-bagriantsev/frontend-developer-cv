@@ -14,7 +14,7 @@
   margin-bottom: 10px;
   transition: all .7s ease-in-out;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: $mobile) {
     padding: 5px 8px;
     margin-right: 5px;
     margin-bottom: 5px;
@@ -25,6 +25,11 @@
     margin-right: 10px;
 
     @media screen and (max-width: $tablet) {
+      width: 45px;
+      margin-right: 5px;
+    }
+
+    @media screen and (max-width: $mobile) {
       width: 30px;
       margin-right: 5px;
     }

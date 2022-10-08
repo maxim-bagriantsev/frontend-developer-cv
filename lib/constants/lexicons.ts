@@ -25,6 +25,7 @@ export const translations = {
             'languages-english': 'English:',
             'languages-russia-des': ' Native',
             'languages-english-des': ' B1, Technical English: documentation reading, correspondence, commenting',
+            'site': 'Site:',
 
             // pwc - project
             'pwc-title-description': 'Educational platform',
@@ -119,6 +120,7 @@ export const translations = {
             'languages-english': 'Английский:',
             'languages-russia-des': ' Носитель',
             'languages-english-des': ' B1, Технический английский: чтение документации, переписка, комментирование',
+            'site': 'Сайт:',
 
             // pwc - project
             'pwc-title-description': 'Образовательная платформа',
@@ -181,7 +183,7 @@ export const translations = {
             'year-higher': '2004 - 2009 гг. (Высшее, специалист)',
             'institution-higher': 'ВУЗ',
             'institution_description-higher': ' - Самарский государственный технический университет',
-            'faculty-higher': ' Факультет:',
+            'faculty-higher': 'Факультет:',
             'faculty__description-higher': ' Разработка нефтяных и газовых месторождений',
         }
     }

@@ -12,6 +12,7 @@
     font-size: 36px;
     line-height: 44px;
     font-weight: 600;
+
     @media screen and (max-width: $tablet) {
       margin-bottom: 18px;
       font-size: 24px;
@@ -39,7 +40,6 @@
     &_institution {
       font-size: 18px;
       line-height: 24px;
-      margin-left: 20px;
       margin-bottom: 5px;
 
       @media screen and (max-width: $tablet) {
@@ -62,7 +62,6 @@
     &_faculty {
       font-size: 18px;
       line-height: 24px;
-      margin-left: 20px;
       margin-bottom: 5px;
 
       @media screen and (max-width: $tablet) {

@@ -14,9 +14,12 @@
   transition: all .2s;
   box-shadow: 0 0 2px 2px rgb(139 246 157 / 30%);
 
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+
   @media screen and (max-width: $tablet) {
     width: 350px;
-    //margin-right: 0;
   }
 
   @media screen and (max-width: $mobile) {

@@ -9,6 +9,10 @@
 
   @media screen and (max-width: $tablet) {
     align-items: center;
+  }
+
+  @media screen and (max-width: $mobile) {
+    align-items: center;
     justify-content: center;
     flex-direction: column;
   }
@@ -27,8 +31,6 @@
 
     &_image img {
       border-radius: 50%;
-
-
     }
 
     & div {
@@ -139,10 +141,8 @@
       }
 
       &:hover {
-
         opacity: .7;
         transition: all .5s ease;
-
       }
     }
   }

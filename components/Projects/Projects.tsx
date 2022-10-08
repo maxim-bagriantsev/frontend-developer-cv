@@ -55,6 +55,11 @@ const Projects = () => {
                             <p>{t('pwc-technologies')}</p>
                             <p style={{fontWeight: 600}}>{t('pwc-completed-tasks')}</p>
                             <p>{t('pwc-tasks')}</p>
+                            <div className={cx('site')}>
+                                <p>{t('site')}</p>
+                                <a href="https://training.tedo.ru/" target='_blank'
+                                   className={cx('site__link')}>Технологии доверия (бывший PWC)</a>
+                            </div>
                         </div>
                     </div>
 
@@ -76,6 +81,11 @@ const Projects = () => {
                             <p>{t('surdoclass-technologies')}</p>
                             <p style={{fontWeight: 600}}>{t('surdoclass-completed-tasks')}</p>
                             <p>{t('surdoclass-tasks')}</p>
+                            <div className={cx('site')}>
+                                <p>{t('site')}</p>
+                                <a href="https://surdoclass.ru/" target='_blank'
+                                   className={cx('site__link')}>Surdoclass</a>
+                            </div>
                         </div>
                     </div>
                 </Modal>
@@ -97,6 +107,11 @@ const Projects = () => {
                             <p>{t('skillmaps-technologies')}</p>
                             <p style={{fontWeight: 600}}>{t('skillmaps-completed-tasks')}</p>
                             <p>{t('skillmaps-tasks')}</p>
+                            <div className={cx('site')}>
+                                <p>{t('site')}</p>
+                                <a href="https://skillmaps.ru/" target='_blank'
+                                   className={cx('site__link')}>Skillmaps</a>
+                            </div>
                         </div>
                     </div>
                 </Modal>
@@ -139,6 +154,11 @@ const Projects = () => {
                             <p>{t('mechanica-technologies')}</p>
                             <p style={{fontWeight: 600}}>{t('mechanica-completed-tasks')}</p>
                             <p>{t('mechanica-tasks')}</p>
+                            <div className={cx('site')}>
+                                <p>{t('site')}</p>
+                                <a href="https://mechanica.agency/" target='_blank'
+                                   className={cx('site__link')}>Mechanica</a>
+                            </div>
                         </div>
                     </div>
                 </Modal>

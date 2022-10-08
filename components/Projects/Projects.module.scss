@@ -1,4 +1,5 @@
 @import '../asserts/scss/screens';
+@import '../asserts/scss/colors';
 
 .projects {
   display: flex;
@@ -6,8 +7,13 @@
   justify-content: center;
   flex-direction: column;
 
+  @media screen and (max-width: $tablet) {
+    max-width: 730px;
+  }
+
   &__wrapper {
     display: flex;
+    max-width: 920px;
     justify-content: center;
     flex-wrap: wrap;
 
@@ -23,6 +29,8 @@
     font-weight: 600;
 
     @media screen and (max-width: $tablet) {
+      max-width: 730px;
+      align-items: start;
       margin-bottom: 18px;
       font-size: 24px;
       line-height: 22px;
@@ -85,17 +93,62 @@
     &__wrapper {
       display: flex;
       flex-direction: column;
-      width: 500px;
-      margin-left: 0;
+      width: max-content;
+      margin-left: 20px;
 
       @media screen and (max-width: $tablet) {
-        margin-left: 20px;
+        width: max-content;
+      }
+
+      @media screen and (max-width: $mobile) {
+        width: 300px;
+      }
+
+      @media screen and (max-width: $mobile-small) {
+        width: 200px;
       }
 
       p {
         font-size: 18px;
         line-height: 22px;
         white-space: pre-wrap;
+      }
+
+      .site {
+        display: flex;
+
+        p {
+          font-weight: 600;
+        }
+
+        &__link {
+          font-size: 18px;
+          line-height: 22px;
+          font-weight: 500;
+          display: inline-block;
+          margin-left: 10px;
+          color: $color-light-blue;
+          width: max-content;
+
+          &::after {
+            content: '';
+            width: 0;
+            height: 1px;
+            display: block;
+            background: $color-light-blue;
+            transition: 300ms;
+          }
+
+          &:hover::after {
+            width: 100%;
+          }
+
+          &:hover {
+            text-decoration: none;
+            transition: all .5s ease;
+            opacity: .7;
+          }
+        }
       }
     }
   }
