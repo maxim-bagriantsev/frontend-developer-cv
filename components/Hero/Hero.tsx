@@ -40,7 +40,7 @@ const Hero = () => {
           </div>
           <div  className={cx('contacts__item')}>
             <img className={cx('contacts__icon')} src={email.src} alt="email" />
-            <a type="m" target={'_blank'} href={'bagryancevm@gmail.com'} className={cx('contacts__item_link')}
+            <a type="m" target={'_blank'} href={'mailto: bagryancevm@gmail.com'} className={cx('contacts__item_link')}
                rel="noreferrer">{t('sendEmail')}</a>
           </div>
           <div  className={cx('contacts__item')}>
