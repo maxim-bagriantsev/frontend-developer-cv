@@ -3,7 +3,7 @@ export const translations = {
         translation: {
             'fullName': 'Bagryancev Maxim, 35',
             'directions': 'Hardworking and passionate frontend developer',
-            'stack': '(Node.js, Next.js, ReactJS, TypeScript)',
+            'stack': '(ReactJS, Next.js, TypeScript)',
             'contactByTelegram': 'Contact by Telegram',
             'sendEmail': 'Send E-mail',
             'contactByPhone': 'Contact by Phone',
@@ -98,7 +98,7 @@ export const translations = {
         translation: {
             'fullName': 'Багрянцев Максим, 35',
             'directions': 'Трудолюбивый и увлеченный фронтенд-разработчик',
-            'stack': '(Node.js, Next.js, ReactJS, TypeScript)',
+            'stack': '(ReactJS, Next.js, TypeScript)',
             'contactByTelegram': 'Связаться по Telegram',
             'sendEmail': 'Отправить на почту',
             'contactByPhone': 'Позвонить по телефону',
