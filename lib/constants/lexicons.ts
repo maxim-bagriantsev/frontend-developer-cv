@@ -79,7 +79,7 @@ export const translations = {
             'mechanica-tasks': 'Participation in the development of the project architecture. Layout according to the layout with adaptation for various devices. Development of UI components. ',
 
             // sber - project
-            'sber-title-description': 'Project “Investment in the Future” from Sberbank',
+            'sber-title-description': 'Investment in the Future from Sberbank',
             'sber-description': 'Sberbank — Evidence-Based Education Open Research Platform',
             'sber-involvement': 'Involvement in the project',
             'sber-involvement-description': 'Partial. Improvement of functionality, development of new features, bug fixes.',
@@ -183,7 +183,7 @@ export const translations = {
             'mechanica-tasks': 'Участие в разработке архитектуры проекта. Вёрстка по макету с адаптацией под различные устройства. Разработка UI-компонентов.',
 
             // sber - project
-            'sber-title-description': 'Проект “Вклад в будущее” от Сбер',
+            'sber-title-description': 'Вклад в будущее от Сбер',
             'sber-description': 'Сбербанк — Открытая исследовательская платформа «Доказательное образование»',
             'sber-involvement': 'Вовлеченность в проект',
             'sber-involvement-description': 'Частичная. Доработка функционала, разработка новых фитч, исправление багов.',
