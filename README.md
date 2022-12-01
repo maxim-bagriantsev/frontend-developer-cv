@@ -61,6 +61,7 @@ Add .env.local into app/ folder. Example is inside .env.example and values descr
 ```
 
 #### NPM
+vertion 16.0.0
 ```bash
     cd app/
     npm run build && npm run start

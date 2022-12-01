@@ -78,6 +78,16 @@ export const translations = {
             'mechanica-completed-tasks': 'Completed tasks',
             'mechanica-tasks': 'Participation in the development of the project architecture. Layout according to the layout with adaptation for various devices. Development of UI components. ',
 
+            // sber - project
+            'sber-title-description': 'Project “Investment in the Future” from Sberbank',
+            'sber-description': 'Sberbank — Evidence-Based Education Open Research Platform',
+            'sber-involvement': 'Involvement in the project',
+            'sber-involvement-description': 'Partial. Improvement of functionality, development of new features, bug fixes.',
+            'sber-used-technologies': 'Used technologies',
+            'sber-technologies': 'React.js, SPA, Redux.js-Toolkit | rtk-query, TypeScript, SASS preprocessor, Antd',
+            'sber-completed-tasks': 'Completed tasks',
+            'sber-tasks': 'Participation in the development of the project architecture. Development of UI components.',
+
             // education SimbirSoft
             'year': 'August 2021 - December 2021 (Course)',
             'institution': 'SimbirSoft',
@@ -98,7 +108,7 @@ export const translations = {
         translation: {
             'fullName': 'Багрянцев Максим, 35',
             'directions': 'Трудолюбивый и увлеченный фронтенд-разработчик',
-            'stack': '(ReactJS, Next.js, TypeScript)',
+            'stack': '(ReactJS, Next.js, TypeScript, Redux Toolkit | rtk query)',
             'contactByTelegram': 'Связаться по Telegram',
             'sendEmail': 'Отправить на почту',
             'contactByPhone': 'Позвонить по телефону',
@@ -171,6 +181,16 @@ export const translations = {
             'mechanica-technologies': 'React.js, SASS preprocessor, UI library',
             'mechanica-completed-tasks': 'Выполненные задачи',
             'mechanica-tasks': 'Участие в разработке архитектуры проекта. Вёрстка по макету с адаптацией под различные устройства. Разработка UI-компонентов.',
+
+            // sber - project
+            'sber-title-description': 'Проект “Вклад в будущее” от Сбер',
+            'sber-description': 'Сбербанк — Открытая исследовательская платформа «Доказательное образование»',
+            'sber-involvement': 'Вовлеченность в проект',
+            'sber-involvement-description': 'Частичная. Доработка функционала, разработка новых фитч, исправление багов.',
+            'sber-used-technologies': 'Используемые технологии',
+            'sber-technologies': 'React.js, SPA, Redux.js-Toolkit | rtk-query, TypeScript, SASS preprocessor, Antd',
+            'sber-completed-tasks': 'Выполненные задачи',
+            'sber-tasks': 'Участие в разработке архитектуры проекта. Разработка UI-компонентов.',
 
             // education SimbirSoft
             'year': 'август 2021 - декабрь 2021 гг. (Курсы)',

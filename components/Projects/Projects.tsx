@@ -16,11 +16,12 @@ import Card from '@UI/Card/Card';
 import {Modal} from 'antd';
 
 // ** Icons Imports
-import PwcIcon from '../../public/icons/projects/pwc.png'
-import SurdoIcon from '../../public/icons/projects/surdo.png'
-import SkillmapsIcon from '../../public/icons/projects/skillmaps.png'
-import CarSharingIcon from '../../public/icons/projects/carSharing.png'
-import MechanicaIcon from '../../public/icons/projects/mechanica.png'
+import PwcIcon from '../../public/icons/projects/pwc.png';
+import SurdoIcon from '../../public/icons/projects/surdo.png';
+import SkillmapsIcon from '../../public/icons/projects/skillmaps.png';
+import CarSharingIcon from '../../public/icons/projects/carSharing.png';
+import MechanicaIcon from '../../public/icons/projects/mechanica.png';
+import SberIcon from '../../public/icons/projects/sber.png';
 
 const cx = classNames.bind(styles);
 
@@ -32,6 +33,7 @@ const Projects = () => {
     const [modalSkillmapsOpen, setModalSkillmapsOpen] = useState(false);
     const [modalCarSharingOpen, setModalCarSharingOpen] = useState(false);
     const [modalMechanicaOpen, setModalMechanicaOpen] = useState(false);
+    const [modalSberOpen, setModalSberOpen] = useState(false);
 
     const {t} = useTranslation();
 
@@ -50,6 +52,8 @@ const Projects = () => {
                       onClick={() => setModalCarSharingOpen(true)}/>
                 <Card image={MechanicaIcon.src} title={'Mechanica'} label={t('mechanica-title-description')}
                       onClick={() => setModalMechanicaOpen(true)}/>
+                <Card image={SberIcon.src} title={'SberBank'} label={t('sber-title-description')}
+                      onClick={() => setModalSberOpen(true)}/>
                 <Modal
                     className={cx('modal')}
                     visible={modalPwcOpen}
@@ -70,7 +74,7 @@ const Projects = () => {
                             <div className={cx('site')}>
                                 <p>{t('site')}</p>
                                 <a href="https://training.tedo.ru/" target='_blank'
-                                   className={cx('site__link')}>Технологии доверия (бывший PWC)</a>
+                                   className={cx('site__link')} rel="noreferrer">Технологии доверия (бывший PWC)</a>
                             </div>
                         </div>
                     </div>
@@ -95,7 +99,7 @@ const Projects = () => {
                             <div className={cx('site')}>
                                 <p>{t('site')}</p>
                                 <a href="https://surdoclass.ru/" target='_blank'
-                                   className={cx('site__link')}>Surdoclass</a>
+                                   className={cx('site__link')} rel="noreferrer">Surdoclass</a>
                             </div>
                         </div>
                     </div>
@@ -121,7 +125,7 @@ const Projects = () => {
                             <div className={cx('site')}>
                                 <p>{t('site')}</p>
                                 <a href="https://skillmaps.ru/" target='_blank'
-                                   className={cx('site__link')}>Skillmaps</a>
+                                   className={cx('site__link')} rel="noreferrer">Skillmaps</a>
                             </div>
                         </div>
                     </div>
@@ -168,8 +172,29 @@ const Projects = () => {
                             <div className={cx('site')}>
                                 <p>{t('site')}</p>
                                 <a href="https://mechanica.agency/" target='_blank'
-                                   className={cx('site__link')}>Mechanica</a>
+                                   className={cx('site__link')} rel="noreferrer">Mechanica</a>
                             </div>
+                        </div>
+                    </div>
+                </Modal>
+
+                <Modal
+                  className={cx('modal')}
+                  visible={modalSberOpen}
+                  onOk={() => setModalSberOpen(false)}
+                  onCancel={() => setModalSberOpen(false)}
+                >
+                    <h3>Сбербанк - project</h3>
+                    <div className={cx('experienceModal')}>
+                        <img src={SberIcon.src} alt="" className={cx('experienceModal__image')}/>
+                        <div className={cx('experienceModal__wrapper')}>
+                            <p>{t('sber-description')}</p>
+                            <p style={{fontWeight: 600}}>{t('sber-involvement')}</p>
+                            <p>{t('sber-involvement-description')}</p>
+                            <p style={{fontWeight: 600}}>{t('sber-used-technologies')}</p>
+                            <p>{t('sber-technologies')}</p>
+                            <p style={{fontWeight: 600}}>{t('sber-completed-tasks')}</p>
+                            <p>{t('sber-tasks')}</p>
                         </div>
                     </div>
                 </Modal>
