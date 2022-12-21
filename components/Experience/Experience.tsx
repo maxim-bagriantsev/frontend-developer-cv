@@ -31,7 +31,7 @@ const Experience = () => {
         <div className={cx('experience')}>
             <div className={cx('experience__title')}>{t('experience')}</div>
             <div className={cx('experience__wrapper')}>
-                <Card image={MechanicaIcon.src} title={'IT-company'} label={'2021 - now'}
+                <Card image={MechanicaIcon.src} title={'IT-company'} label={'2020 - now'}
                       onClick={() => setModalMechanicaOpen(true)}/>
                 <Card image={RosneftIcon.src} title={'Rosneft'} label={'2010 - 2022'}
                       onClick={() => setModalRosneftOpen(true)}/>

@@ -41,6 +41,8 @@ const Projects = () => {
         <div className={cx('projects')}>
             <div className={cx('projects__title')}>{t('projects')}</div>
             <div className={cx('projects__wrapper')}>
+                <Card image={SberIcon.src} title={'SberBank'} label={t('sber-title-description')}
+                      onClick={() => setModalSberOpen(true)}/>
                 <Card image={PwcIcon.src} title={'PWC'} label={t('pwc-title-description')}
                       onClick={() => setModalPwcOpen(true)}/>
                 <Card image={SurdoIcon.src} title={'Surdoclass'} label={t('surdoclass-title-description')}
@@ -52,8 +54,6 @@ const Projects = () => {
                       onClick={() => setModalCarSharingOpen(true)}/>
                 <Card image={MechanicaIcon.src} title={'Mechanica'} label={t('mechanica-title-description')}
                       onClick={() => setModalMechanicaOpen(true)}/>
-                <Card image={SberIcon.src} title={'SberBank'} label={t('sber-title-description')}
-                      onClick={() => setModalSberOpen(true)}/>
                 <Modal
                     className={cx('modal')}
                     visible={modalPwcOpen}
