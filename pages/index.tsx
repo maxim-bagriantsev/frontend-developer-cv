@@ -13,12 +13,12 @@ import Hero from '@components/Hero/Hero';
 import Header from '@components/Header/Header';
 import Description from '@components/Description/Description';
 import Accounts from '@components/Accounts/Accounts';
-import Experience from "@components/Experience/Experience";
-import Projects from "@components/Projects/Projects";
-import Skills from "@components/Skills/Skills";
-import Education from "@components/Education/Education";
-import Languages from "@components/Languages/Languages";
-import Footer from "@components/Footer/Footer";
+import Experience from '@components/Experience/Experience';
+import Projects from '@components/Projects/Projects';
+import Skills from '@components/Skills/Skills';
+import Education from '@components/Education/Education';
+import Languages from '@components/Languages/Languages';
+import Footer from '@components/Footer/Footer';
 
 const cx = classNames.bind(styles);
 
