@@ -15,7 +15,6 @@ type Card = {
     onClick?: () => void
 }
 
-
 const Card = (props: Card) => {
 
     const {link, image, label, title, onClick} = props;
